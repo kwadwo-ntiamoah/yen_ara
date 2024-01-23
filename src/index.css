@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  @apply max-w-screen-sm px-6 mx-auto inset-0
+}
+
+.btn {
+  @apply rounded-[1.875rem] py-[0.6rem] min-w-40 text-sm
+}
+
+.btn-primary {
+  @apply bg-[#00B2FF]
+}
+
+.btn-outlined {
+  @apply border border-[#00b2ff] text-[#00b2ff]
+}
