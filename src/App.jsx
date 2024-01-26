@@ -73,7 +73,7 @@ const App = () => {
       </div>
 
       {/* about us */}
-      <div className="h-auto w-screen bg-primary-100 flex flex-col items-center justify-center">
+      <div className="min-h-screen w-screen bg-primary-100 flex flex-col items-center justify-center">
         <div className="container flex flex-col space-y-8 py-10">
           {/* about */}
           <div className="flex flex-col space-y-3">
