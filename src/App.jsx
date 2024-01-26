@@ -34,14 +34,31 @@ const App = () => {
     },
   ];
 
+  const whyUs = [
+    {
+      title: "Experts on-board from Day 1",
+      description:
+        "Our team of experts are always on standby to help curb your problem",
+    },
+    {
+      title: "On-time & On-budget delivery",
+      description:
+        "Delivering excellent and reliable solutions to companies and small non-profits valued at your budget",
+    },
+    {
+      title: "We get you involved",
+      description:
+        "We believe that strong collaboration brings the best results. We get your feedbak from start to finish of a solution",
+    },
+  ];
+
   return (
     <div>
       {/* navbar */}
       <Navbar />
-      <div className="h-screen flex flex-col w-screen bg-blue-400 bg-[url('assets/stepsBg.svg')] bg-auto bg-center">
-        <div className="h-[83px]"></div>
-        <div className="grow container py-5 flex flex-col items-center justify-center space-y-10">
-          <p className="text-[4.125rem] leading-[4.437rem] text-white font-bold text-center">
+      <div className="h-auto flex flex-col w-screen bg-blue-400 bg-[url('assets/stepsBg.svg')] bg-auto bg-center">
+        <div className="container pt-36 pb-16 flex flex-col items-center justify-center space-y-10">
+          <p className="text-[3.6rem] leading-[3.65rem] text-white font-bold text-center">
             Unlocking Business Insights for Strategic Growth
           </p>
           <p className="text-white text-center">
@@ -56,12 +73,11 @@ const App = () => {
       </div>
 
       {/* about us */}
-      <div className="h-screen w-screen bg-primary-100 flex flex-col">
-        <div className="h-[83px]"></div>
-        <div className="grow container flex flex-col justify-around ">
+      <div className="h-auto w-screen bg-primary-100 flex flex-col items-center justify-center">
+        <div className="container flex flex-col space-y-8 py-10">
           {/* about */}
           <div className="flex flex-col space-y-3">
-            <p className="text-5xl font-bold">About Us</p>
+            <p className="text-4xl font-bold">About Us</p>
             <p>
               We are an innovative consultants helping businesses whether big or
               small stay tough, independent and operational in difficult
@@ -71,7 +87,7 @@ const App = () => {
 
           {/* vision */}
           <div className="flex flex-col space-y-3">
-            <p className="text-2xl font-bold">Our Vision</p>
+            <p className="text-xl font-bold">Our Vision</p>
             <p>
               Be the leading consultant in empowering organisations to thrive in
               dynamic markets through insightful analysis, innovative
@@ -81,7 +97,7 @@ const App = () => {
 
           {/* mission */}
           <div>
-            <p className="text-2xl font-bold">Our Mission</p>
+            <p className="text-xl font-bold">Our Mission</p>
             <p>
               To provide exceptional expertise in business analysis, leveraging
               on data-driven insights and innovative approaches for better
@@ -92,7 +108,7 @@ const App = () => {
 
           {/* process */}
           <div>
-            <p className="text-2xl font-bold">Our Process</p>
+            <p className="text-xl font-bold">Our Process</p>
             <p>
               Our comprehensive process involves thorough data gathering,
               research, and strategy meetings to identify potential, address
@@ -104,8 +120,7 @@ const App = () => {
       </div>
 
       {/* services */}
-      <div className="h-full w-screen bg-white py-12">
-        
+      <div className="h-auto w-screen bg-white py-12">
         <div className="container flex flex-col space-y-3 text-center">
           <p className="text-4xl font-bold">Our Services</p>
           <p>
@@ -114,10 +129,49 @@ const App = () => {
             functional but exceptional with the below
           </p>
         </div>
-        <div className="grow container grid grid-cols-1 py-10 gap-8">
+        <div className="container grid grid-cols-1 pt-10 gap-8">
           {services.map((service) => {
             return <ServiceCard service={service} key={service.title} />;
           })}
+        </div>
+      </div>
+
+      {/* why use */}
+      <div className="h-auto w-screen bg-white">
+        <div className="container flex flex-col space-y-3 text-center pt-5">
+          <p className="text-4xl font-bold">Why Our Clients choose us</p>
+          <p>
+            Our work is rooted in critical analysis and a user-centric
+            philosophy, ensuring that every solution we deliver is not just
+            functional but exceptional with the below
+          </p>
+        </div>
+        <div className="container grid grid-cols-1 pt-10 gap-8">
+          {whyUs.map((service) => {
+            return <ServiceCard service={service} key={service.title} />;
+          })}
+        </div>
+
+        <div className="container flex items-center justify-center py-12">
+          <button className="btn btn-primary">Book a free call now</button>
+        </div>
+      </div>
+
+      {/* testimonials */}
+      <div className="h-auto bg-[#00223B]">
+        <div className="container py-24">
+          <div className="flex flex-col space-y-10">
+            <p className="text-white text-center font-bold text-3xl">
+              Where Business Insight Meets User-Centric Innovation
+            </p>
+            <div className="flex flex-col space-y-4 justify-center items-center">
+              <p className="text-white text-center">
+                Transforming companies through cutting-edge business analysis
+                and intuitive user experience research
+              </p>
+              <p className="text-white text-xs font-bold">Deborah Monnie - CEO</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

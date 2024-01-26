@@ -2,12 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply overflow-x-hidden;
+}
+
 .container {
-  @apply max-w-screen-sm px-6 mx-auto inset-0
+  @apply max-w-sm px-6 mx-auto inset-0
 }
 
 .btn {
-  @apply rounded-[1.875rem] py-[0.6rem] min-w-40 text-sm
+  @apply rounded-[1.875rem] py-3 min-w-40 text-sm
 }
 
 .btn-primary {
