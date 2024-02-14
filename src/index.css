@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  @apply max-w-sm px-6 mx-auto inset-0
+  @apply max-w-sm md:max-w-2xl lg:max-w-5xl px-6 mx-auto inset-0
 }
 
 .btn {

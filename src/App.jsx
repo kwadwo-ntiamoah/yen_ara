@@ -56,12 +56,12 @@ const App = () => {
     <div>
       {/* navbar */}
       <Navbar />
-      <div className="h-auto flex flex-col w-screen bg-blue-400 bg-[url('assets/stepsBg.svg')] bg-auto bg-center">
-        <div className="container pt-36 pb-16 flex flex-col items-center justify-center space-y-10">
-          <p className="text-[3.6rem] leading-[3.65rem] text-white font-bold text-center">
+      <div className="h-auto lg:h-screen flex flex-col items-center justify-center w-screen bg-blue-400 bg-[url('assets/stepsBg.svg')] bg-auto bg-center">
+        <div className="container pt-36 pb-16 lg:pt-0 lg:pb-0 flex flex-col items-center justify-center space-y-10 lg:space-y-5">
+          <p className="lg:min-h-full text-[3.6rem] leading-[3.65rem] lg:text-[4.5rem] lg:leading-[4.55rem] text-white font-bold text-center">
             Unlocking Business Insights for Strategic Growth
           </p>
-          <p className="text-white text-center">
+          <p className="text-white text-center lg:text-lg">
             We bring clarity to complexities, blending business acumen with user
             experience expertise for unparalleled success
           </p>
@@ -129,7 +129,7 @@ const App = () => {
             functional but exceptional with the below
           </p>
         </div>
-        <div className="container grid grid-cols-1 pt-10 gap-8">
+        <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-10 gap-8">
           {services.map((service) => {
             return <ServiceCard service={service} key={service.title} />;
           })}
@@ -146,7 +146,7 @@ const App = () => {
             functional but exceptional with the below
           </p>
         </div>
-        <div className="container grid grid-cols-1 pt-10 gap-8">
+        <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-10 gap-8">
           {whyUs.map((service) => {
             return <ServiceCard service={service} key={service.title} />;
           })}
